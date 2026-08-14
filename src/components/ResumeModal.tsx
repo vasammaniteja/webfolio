@@ -67,18 +67,28 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         {/* Printable Resume Content Container */}
         <div className="p-6 sm:p-8 overflow-y-auto space-y-6 text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900">
           {/* Header */}
-          <div className="border-b border-slate-200 dark:border-slate-800 pb-6 text-center sm:text-left flex flex-col sm:flex-row items-center sm:items-start justify-between gap-4">
-            <div>
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-                {STUDENT_PROFILE.name}
-              </h1>
-              <p className="text-base font-medium text-blue-600 dark:text-blue-400 mt-0.5">
-                {STUDENT_PROFILE.title} &bull; Aspiring Machine Learning Engineer
-              </p>
-              <p className="text-xs text-slate-500 dark:text-slate-400 flex items-center justify-center sm:justify-start gap-1 mt-1">
-                <MapPin className="w-3 h-3 text-slate-400" />
-                Hyderabad, India &bull; Open to Relocation &amp; Remote Roles
-              </p>
+          <div className="border-b border-slate-200 dark:border-slate-800 pb-6 text-center sm:text-left flex flex-col sm:flex-row items-center sm:items-start justify-between gap-5">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border-2 border-blue-500/40 shadow-md shrink-0 bg-slate-800">
+                <img
+                  src={STUDENT_PROFILE.avatar}
+                  alt={STUDENT_PROFILE.name}
+                  className="w-full h-full object-cover object-center"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div>
+                <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                  {STUDENT_PROFILE.name}
+                </h1>
+                <p className="text-base font-medium text-blue-600 dark:text-blue-400 mt-0.5">
+                  {STUDENT_PROFILE.title} &bull; Aspiring Machine Learning Engineer
+                </p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 flex items-center justify-center sm:justify-start gap-1 mt-1">
+                  <MapPin className="w-3 h-3 text-slate-400" />
+                  Hyderabad, India &bull; Open to Relocation &amp; Remote Roles
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col gap-1.5 text-xs font-mono text-slate-600 dark:text-slate-400 text-center sm:text-right">

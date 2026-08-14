@@ -14,10 +14,13 @@ export const Footer: React.FC = () => {
           
           {/* Brand */}
           <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-0.5 shadow-md shadow-blue-600/30">
-              <div className="w-full h-full rounded-full bg-slate-950 flex items-center justify-center text-white font-bold font-mono text-sm">
-                VM
-              </div>
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-0.5 shadow-md shadow-blue-600/30 overflow-hidden">
+              <img
+                src={STUDENT_PROFILE.avatar}
+                alt={STUDENT_PROFILE.name}
+                className="w-full h-full rounded-full object-cover object-center"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div>
               <span className="font-extrabold text-white text-base tracking-tight block">

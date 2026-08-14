@@ -1,11 +1,12 @@
 import { Certificate, Project, SkillItem, StudentProfile } from '../types';
+import profileAvatar from '../assets/profile.jpg';
 
 export const STUDENT_PROFILE: StudentProfile = {
   name: 'Vasam Maniteja',
   title: 'Data Science Student',
   shortBio: 'I am a passionate Data Science student interested in Python, data analysis, machine learning, and solving real-world problems using data.',
   aboutParagraph: 'As an aspiring Data Scientist and Machine Learning Engineer at Malla Reddy Engineering College & Management Sciences, I combine rigorous mathematical foundations with hands-on coding in Python, SQL, and Machine Learning algorithms. I specialize in turning complex raw datasets into predictive models and actionable business intelligence dashboards.',
-  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+  avatar: profileAvatar,
   education: {
     institution: 'Malla Reddy Engineering College & Management Sciences',
     degree: 'Bachelor of Technology (B.Tech)',

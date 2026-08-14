@@ -90,10 +90,13 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="flex items-center gap-3 group cursor-pointer"
         >
           <div className="relative">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-0.5 group-hover:scale-105 transition-transform shadow-md shadow-blue-500/20">
-              <div className="w-full h-full rounded-full bg-slate-950 flex items-center justify-center text-white font-bold font-mono text-sm">
-                VM
-              </div>
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-0.5 group-hover:scale-105 transition-transform shadow-md shadow-blue-500/20 overflow-hidden">
+              <img 
+                src={STUDENT_PROFILE.avatar} 
+                alt={STUDENT_PROFILE.name} 
+                className="w-full h-full rounded-full object-cover object-center"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-slate-950" />
           </div>

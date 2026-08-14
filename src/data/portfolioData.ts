@@ -1,5 +1,5 @@
 import { Certificate, Project, SkillItem, StudentProfile } from '../types';
-import profileAvatar from '../assets/profile.jpg';
+import profileAvatar from '../assets/profile.jpeg';
 
 export const STUDENT_PROFILE: StudentProfile = {
   name: 'Vasam Maniteja',
